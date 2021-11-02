@@ -3,7 +3,7 @@ import Nav from "./Nav.js";
 
 const header = () => {
   return (
-    <div>
+    <div id="header">
       <h1>Animal Database </h1>
       <Nav />
     </div>

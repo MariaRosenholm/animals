@@ -27,16 +27,19 @@ class AnimalList extends Component {
     ));
 
     return (
-      <div className="wrapper">
-        <Switch>
-          <Route exact path={this.props.match.path}>
-            <input type="text" onChange={this.searchInputHandler} />
-            {animalsListing}
-          </Route>
-          <Route path={`${this.props.match.path}/:animal`}>
-            <AnimalSingle />
-          </Route>
-        </Switch>
+      <div>
+        <label>Search</label>
+        <input type="text" onChange={this.searchInputHandler} />
+        <div className="wrapper">
+          <Switch>
+            <Route exact path={this.props.match.path}>
+              {animalsListing}
+            </Route>
+            <Route path={`${this.props.match.path}/:animal`}>
+              <AnimalSingle />
+            </Route>
+          </Switch>
+        </div>
       </div>
     );
   }
