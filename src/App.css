@@ -7,17 +7,23 @@
 .card {
   height: 30vh;
   width: 20vw;
-  border: rgb(153, 224, 153) 5px solid;
   margin: 3vh;
   padding: 3vh;
   border-radius: 10px;
-  box-shadow: rgb(100, 177, 202) 1px 2px 4px 2px;
+  box-shadow: grey 1px 2px 4px 2px;
+  filter: grayscale(100%);
+}
+
+.card:hover {
+  filter: grayscale(0%);
+  box-shadow: grey 1px 20px 20px 2px;
 }
 
 .main {
   text-align: center;
   margin: 3vw;
   border-radius: 10px;
+  min-height: 100vh;
 }
 
 .wrapper {
@@ -29,24 +35,29 @@
 h1,
 h3 {
   text-align: center;
-  margin: 5vh;
+  margin-top: 8vh;
+}
+
+h3 {
+  margin-bottom: 5vh;
 }
 
 img {
   border-radius: 3px;
   margin-top: 2vh;
+  margin-bottom: 1vh;
   height: 17vh;
   width: 15vw;
-  box-shadow: rgb(100, 177, 202) 1px 2px 4px 2px;
+  box-shadow: gray 1px 2px 4px 2px;
 }
 
 p {
   text-align: center;
+  margin-top: 3vh;
 }
 
 nav {
-  background-color: papayawhip;
-  height: 13vh;
+  height: 10vh;
   width: 100vw;
 }
 
@@ -58,7 +69,12 @@ nav ul {
 
 li {
   list-style-type: none;
-  padding: 4vh 5vw 1vh 5vw;
-  font-size: 2rem;
+  padding: 4vh 3vw 1vh 3vw;
+  font-size: 1rem;
   color: black;
+}
+
+#about {
+  width: 33%;
+  margin-left: 33%;
 }

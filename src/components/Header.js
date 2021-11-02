@@ -4,6 +4,7 @@ import Nav from "./Nav.js";
 const header = () => {
   return (
     <div>
+      <h1>Animal Database </h1>
       <Nav />
     </div>
   );
