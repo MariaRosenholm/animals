@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 #header {
   display: flex;
   flex-direction: row;
@@ -105,6 +119,7 @@ input {
   height: 5vh;
   width: 20vw;
   border-radius: 5px;
+  padding-left: 10px;
 }
 
 #single {
@@ -123,4 +138,26 @@ input {
 
 #single p {
   margin: 15px auto;
+}
+
+.links {
+  text-decoration: unset;
+  color: white;
+}
+
+.links:hover {
+  text-shadow: rgb(63, 44, 44) 2px 5px;
+}
+
+.linkListItem {
+  color: black;
+}
+
+.linkListItem {
+  color: black;
+}
+
+.linkListItem:hover {
+  text-shadow: unset;
+  border-bottom: 2px solid black;
 }

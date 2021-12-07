@@ -14,7 +14,9 @@ const Animalcard = (props) => {
         alt="animal"
         src={`https://source.unsplash.com/1600x900/?${props.name}`}
       />
-      <Link to={`${match.url}/${props.name}`}>Read more</Link>
+      <Link className="links linkListItem" to={`${match.url}/${props.name}`}>
+        Read more
+      </Link>
     </div>
   );
 };
