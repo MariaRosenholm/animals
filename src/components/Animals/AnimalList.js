@@ -16,16 +16,15 @@ class AnimalList extends Component {
   };
 
   render() {
-    const animalFilter = animals.filter((animal) => {
+    let animalFilter = animals.filter((animal) => {
       return animal.name
         .toLocaleLowerCase()
         .includes(this.state.searchInput.toLocaleLowerCase());
     });
 
-    const animalsListing = animalFilter.map((animal) => (
+    let AnimalSearchList = animalFilter.map((animal) => (
       <AnimalsCard key={animal.name} name={animal.name} />
     ));
-
     return (
       <div>
         <label>Search</label>
@@ -33,7 +32,7 @@ class AnimalList extends Component {
         <div className="wrapper">
           <Switch>
             <Route exact path={this.props.match.path}>
-              {animalsListing}
+              {AnimalSearchList}
             </Route>
             <Route path={`${this.props.match.path}/:animal`}>
               <AnimalSingle />
