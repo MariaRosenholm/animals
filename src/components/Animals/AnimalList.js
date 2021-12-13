@@ -26,7 +26,7 @@ class AnimalList extends Component {
       <AnimalsCard key={animal.name} name={animal.name} />
     ));
     return (
-      <div>
+      <div id="animalSearch">
         <Switch>
           <Route exact path={this.props.match.path}>
             <label>Search</label>

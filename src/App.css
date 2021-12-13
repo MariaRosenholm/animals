@@ -11,6 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./components/pictures/background.jpg);
+  background-size: 100%;
 }
 
 code {
@@ -21,26 +23,25 @@ code {
 #header {
   display: flex;
   flex-direction: row;
-  background-color: grey;
   position: fixed;
   width: 100vw;
   top: 0px;
   z-index: 1;
+  background-image: url(./components/pictures/background.jpg);
+  box-shadow: grey 0px 2px 2px;
 }
 
 .main {
   text-align: center;
-  margin: 3vw;
   border-radius: 10px;
-  min-height: 100vh;
-  padding-top: 6vh;
   display: flex;
   justify-content: center;
+  margin-top: 8vh;
 }
 
 h1 {
   margin: 3vh;
-  color: rgb(245, 237, 237);
+  color: black;
 }
 
 nav {
@@ -103,11 +104,24 @@ p {
   margin-top: 3vh;
 }
 
-#about,
 #home {
   width: 50%;
-  margin-top: 20vh;
+  margin-top: 15vh;
   font-size: 2rem;
+}
+
+#about {
+  margin-top: 5vh;
+  font-size: 2rem;
+  width: 50%;
+}
+
+#animalSearch {
+  padding-top: 5vh;
+  padding-left: 4vw;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 5vh;
 }
 
 label,
@@ -124,11 +138,13 @@ input {
 }
 
 #single {
-  width: 100%;
+  width: 50%;
   height: 60vh;
   filter: none;
   padding: none;
-  margin-top: 10vh;
+  margin-top: 2vh;
+  margin-left: 25%;
+  background-image: url(./components/pictures/background.jpg);
 }
 
 #single img {
@@ -144,11 +160,11 @@ input {
 
 .links {
   text-decoration: unset;
-  color: white;
+  color: black;
 }
 
 .links:hover {
-  text-shadow: rgb(63, 44, 44) 2px 5px;
+  border-bottom: double grey 1px;
 }
 
 .linkListItem {
