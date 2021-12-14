@@ -139,7 +139,7 @@ input {
 
 #single {
   width: 50%;
-  height: 60vh;
+  height: 62vh;
   filter: none;
   padding: none;
   margin-top: 2vh;
@@ -178,4 +178,13 @@ input {
 .linkListItem:hover {
   text-shadow: unset;
   border-bottom: 2px solid black;
+}
+
+button {
+  height: 6vh;
+  width: 12vw;
+  font-size: 1.5rem;
+  padding: 0.5vh;
+  border-radius: 5px;
+  background-color: rgb(221, 166, 62);
 }

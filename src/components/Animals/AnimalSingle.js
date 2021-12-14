@@ -1,8 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 const AnimalSingle = () => {
   let { animal } = useParams();
+  let history = useHistory();
 
   return (
     <div id="single">
@@ -16,6 +17,8 @@ const AnimalSingle = () => {
           animal.substring(1, animal.lenght)}
         !
       </p>
+
+      <button onClick={() => history.goBack()}>Back to animals</button>
     </div>
   );
 };
