@@ -181,9 +181,9 @@ input {
 }
 
 button {
-  height: 6vh;
-  width: 12vw;
-  font-size: 1.5rem;
+  height: 4vh;
+  width: 10vw;
+  font-size: 1.3rem;
   padding: 0.5vh;
   border-radius: 5px;
   background-color: rgb(221, 166, 62);
